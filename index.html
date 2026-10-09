@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Psychological Assessment Tool</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+        <header class="site-header">
+
+    <div class="brand">
+
+        <img
+            src="assets/logo.png"
+            alt="Psychological Assessment Tool logo"
+            class="header-logo"
+        >
+
+        <div class="project-name">
+            Psychological Assessment Tool
+        </div>
+
+    </div>
+
+    <button id="about-btn" class="about-button">
+        About
+    </button>
+
+</header>
+
+       <main id="landing-page">
+
+        <section class="start-section">
+
+            <div class="start-card">
+
+                <div class="start-visual">
+            <img src="assets/logo.png" alt="Psychological Assessment Tool logo">
+                </div>
+
+                <h1>Discover Your Psychological Tendencies</h1>
+        
+
+                <button id="start-btn" class="primary-button">
+                    Start Assessment
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+<!-- =========================
+     ASSESSMENT
+========================== -->
+<section id="assessment-page" class="assessment-page">
+
+    <div class="assessment-container">
+
+               <div class="assessment-progress">
+
+            <span id="question-number">
+                01 / 03
+            </span>
+
+            <div class="progress-track">
+                <div
+                    id="progress-bar"
+                    class="progress-bar">
+                </div>
+            </div>
+
+        </div>
+
+
+             <div class="question-card">
+
+            <p id="question-text" class="question-text">
+                Question will appear here.
+            </p>
+
+        </div>
+
+
+             <div id="answer-grid" class="answer-grid">
+
+            <button class="answer-option">
+                Option A
+            </button>
+
+            <button class="answer-option">
+                Option B
+            </button>
+
+            <button class="answer-option">
+                Option C
+            </button>
+
+            <button class="answer-option">
+                Option D
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="processing-page" class="processing-page">
+
+    <div class="processing-container">
+
+        <img
+            src="assets/logo.png"
+            alt="Psychological Assessment Tool logo"
+            class="processing-logo"
+        >
+
+        <h2>Analyzing Your Responses</h2>
+
+        <p>
+            Identifying response patterns and preparing your profile...
+        </p>
+
+        <div class="processing-loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="result-page" class="result-page">
+
+    <div class="result-container">
+
+        <div id="result-card" class="result-card">
+
+                        <div class="result-header">
+
+                <img
+                    src="assets/logo.png"
+                    alt="Psychological Assessment Tool logo"
+                    class="result-logo"
+                >
+
+                <div class="result-heading">
+                    <span class="result-label">
+                        YOUR PSYCHOLOGICAL TENDENCY
+                    </span>
+
+                    <h1 id="result-title">
+                        THE EXPLORER
+                    </h1>
+                </div>
+
+            </div>
+
+
+            <div class="result-scores-section">
+
+                <h2 class="result-section-title">
+                    TENDENCY SCORES
+                </h2>
+
+                <div
+                    id="result-scores"
+                    class="result-scores"
+                ></div>
+
+            </div>
+
+                      <div class="result-divider"></div>
+
+            <div class="result-meaning">
+
+                <h2>WHAT THIS MEANS</h2>
+
+                <p id="result-description">
+                    Your responses suggest a tendency toward exploration,
+                    curiosity and openness to new experiences.
+                </p>
+
+            </div>
+
+            <div class="result-divider"></div>
+
+            <div class="result-actions">
+
+                <button
+                    id="retake-btn"
+                    class="secondary-button"
+                    type="button"
+                >
+                    Retake Assessment
+                </button>
+
+                <button
+                    id="share-btn"
+                    class="primary-button"
+                    type="button"
+                >
+                    Share Result
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+   <div id="about-modal" class="modal-overlay">
+
+    <div class="modal" role="dialog" aria-modal="true">
+
+        <button
+            id="about-close"
+            class="modal-close"
+            aria-label="Close">
+            &times;
+        </button>
+
+        <div class="modal-content">
+
+            <h2>About This Project</h2>
+
+            <p>
+                The Psychological Assessment Tool is an educational project
+                designed to help individuals aged 17–25 reflect on their
+                preferences and behavioral tendencies. It explores 11
+                categories and presents a summary based on your responses.
+            </p>
+
+            <h3>How the Assessment Works</h3>
+
+            <p>
+                The assessment contains 55 questions divided into
+                11 categories, with five questions per category.
+                Choose the answer that best reflects your usual
+                preferences and behavior. There are no universally
+                right or wrong answers.
+            </p>
+
+            <h3>How Scores Are Calculated</h3>
+
+            <p>
+                Each answer receives between 0 and 2 points according
+                to the questionnaire's scoring rules. The points earned
+                in each category are compared with the maximum possible
+                points to produce a percentage score.
+            </p>
+
+            <p>
+                <strong>80–100% — High-scoring tendency:</strong>
+                The category qualifies for an individual explanation.
+            </p>
+
+            <p>
+                <strong>60–79% — Moderate-scoring tendency:</strong>
+                These categories qualify for individual explanations
+                only when no category scores 80% or higher.
+            </p>
+
+            <p>
+                <strong>Below 60%:</strong>
+                The score remains visible in your results, but the
+                category does not receive an individual explanation.
+            </p>
+
+            <h3>Understanding Your Results</h3>
+
+            <p>
+                Your results highlight tendencies suggested by your
+                answers. They are intended to support self-reflection,
+                not to define your personality or determine your
+                abilities. The categories and scoring ranges are part
+                of this project's assessment design and should not be
+                treated as clinically validated psychological measures.
+            </p>
+
+        </div>
+
+        <footer class="modal-footer">
+
+    <a
+        href="https://rohitkewatgt.github.io/psychological-assessment-legal/privacy.html"
+        target="_blank"
+        rel="noopener noreferrer">
+        Privacy Policy
+    </a>
+
+    <a
+        href="https://rohitkewatgt.github.io/psychological-assessment-legal/terms.html"
+        target="_blank"
+        rel="noopener noreferrer">
+        Terms of Use
+    </a>
+
+    
+</footer>
+
+    </div>
+
+</div>
+
+    <div id="disclaimer-modal" class="modal-overlay">
+
+        <div class="modal" role="dialog" aria-modal="true">
+
+            <button
+                id="disclaimer-close"
+                class="modal-close"
+                aria-label="Close">
+                &times;
+            </button>
+
+            <div class="modal-content">
+
+                <h2>Before You Begin</h2>
+
+                <p>
+                    This assessment is intended for educational and
+                    self-reflection purposes only.
+                </p>
+
+                <p>
+                    It is based on a study of psychological and behavioral
+                    tendencies observed within a selected group of individuals
+                    aged 17–25.
+                </p>
+
+                <p>
+                    This assessment is not a medical examination,
+                    psychological diagnosis, or substitute for professional
+                    medical or psychological advice.
+                </p>
+
+                <p>
+                    If you are experiencing psychological, emotional, or
+                    behavioral difficulties and require professional
+                    assistance, please consult a qualified psychologist,
+                    therapist, doctor, or other appropriate healthcare
+                    professional.
+                </p>
+
+            </div>
+
+          <footer class="modal-footer">
+
+    <a
+        href="https://rohitkewatgt.github.io/psychological-assessment-legal/privacy.html"
+        target="_blank"
+        rel="noopener noreferrer">
+        Privacy Policy
+    </a>
+
+    <a
+        href="https://rohitkewatgt.github.io/psychological-assessment-legal/terms.html"
+        target="_blank"
+        rel="noopener noreferrer">
+        Terms of Use
+    </a>
+
+    <button id="begin-assessment" class="primary-button">
+                    I Understand — Begin
+                </button>
+
+</footer>
+
+        </div>
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<script src="data/questions.js"></script>
+<script src="systems/assessment.js"></script>
+<script src="systems/scoring.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
